@@ -53,6 +53,6 @@ This project allows users to manage books (add, edit, delete and view) with a cl
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/yourusername/bookmanager.git
+git clone https://github.com/PoornimaChowdary560/bookmanager.git
 
 cd bookmanager
