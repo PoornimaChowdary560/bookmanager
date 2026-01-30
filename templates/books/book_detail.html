@@ -1,0 +1,25 @@
+{% extends 'books/base.html' %}
+{% block title %}{{ book.title }}{% endblock %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-4">
+      {% if book.cover %}
+        <img src="{{ book.cover.url }}" alt="{{ book.title }}" class="img-fluid rounded">
+      {% else %}
+        <div class="bg-light p-5 text-center">No cover</div>
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      <h2>{{ book.title }}</h2>
+      <p class="text-muted">By {{ book.author|default:"Unknown" }}</p>
+      <p>{{ book.description|linebreaks }}</p>
+      <p class="small text-muted">Added by {{ book.owner.username }} on {{ book.created_at|date:"F j, Y" }}</p>
+
+      {% if user.is_authenticated and user == book.owner %}
+        <a href="{% url 'book_edit' book.pk %}" class="btn btn-sm btn-outline-secondary">Edit</a>
+        <a href="{% url 'book_delete' book.pk %}" class="btn btn-sm btn-outline-danger">Delete</a>
+      {% endif %}
+      <a href="{% url 'book_list' %}" class="btn btn-sm btn-light">Back</a>
+    </div>
+  </div>
+{% endblock %}
