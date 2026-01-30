@@ -115,5 +115,10 @@ This project is licensed under the MIT ![LICENSE](LICENSE).
 You are free to use, modify, and distribute this project.
 
 ## Contact
-For inquiries or support, please reach out to the project maintainer.
+
+If you have questions or want to collaborate:
+
+GitHub: PoornimaChowdary560
+
+Email: poornimamaddipati22@gmail.com.com
 
