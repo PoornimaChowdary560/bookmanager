@@ -111,7 +111,7 @@ Open your browser and visit:
 
 ## License
 
-This project is licensed under the MIT ![LICENSE]LICENSE.
+This project is licensed under the MIT ![LICENSE](LICENSE).
 You are free to use, modify, and distribute this project.
 
 ## Contact
